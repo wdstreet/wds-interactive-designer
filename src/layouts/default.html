@@ -1,0 +1,39 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome-->
+
+    <title>Walter Street | Interactive Designer</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <link rel="stylesheet" href="{{root}}assets/foundation-icons/foundation-icons.css" />
+
+</head>
+
+<body>
+
+
+    {{> head}} 
+    <div class="row align-center">
+       <div class="bottom-nav  small-4 column">
+            <ul class="menu align-center">
+                <li class=''><a href="#">Skills</a></li>
+                <li class=''><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    {{> project}}
+    
+
+
+    <!--App Script-->
+    <script src="{{root}}assets/js/app.js"></script>
+    <script src="https://use.fontawesome.com/83187157c2.js"></script>
+</body>
+
+</html>
