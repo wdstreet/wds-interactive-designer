@@ -2,10 +2,6 @@ body {
     background-color: $primary-color !important;
 }
 
-.test-bg { 
-    background-color: #ba8337;
-}
-
 .pull-forwardx1 {
     z-index: 100;    
 }
@@ -61,12 +57,17 @@ section {
     width: 100%;
     height: 50px;
     border-top: 1px solid; 
-    border-color: #fff;
+    border-color: rgba(255, 255, 255, 0.1);
     ul li { 
         font-family: 'Source Sans Pro', sans-serif; 
         font-weight: 400;
         font-size: 1em;
         letter-spacing: 5px;
+        //transition animation
+        transition: all 0.7s ease-in;
+        a:hover { 
+            color: $secondary-color !important;
+            transition: all 0.25s ease-in;
+        }  
     }
-   
 }
