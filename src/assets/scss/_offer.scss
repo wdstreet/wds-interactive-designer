@@ -1,3 +1,14 @@
-.offer-bg { 
-    background-color: #ba8337;
+#video-bg {
+    position: relative;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+    overflow: hidden;
+    z-index: -100;
+    background-size: cover;
+}
+
+.stageBg {
+    background-color: cadetblue;
 }

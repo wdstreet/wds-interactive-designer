@@ -2,12 +2,17 @@ body {
     background-color: $primary-color !important;
 }
 
+
 .pull-forwardx1 {
     z-index: 100;    
 }
 
 .pull-forwardx2 {
     z-index: 200;    
+}
+
+.pull-forwardx3 {
+    z-index: 300 !important;    
 }
 
 .pull-back { 
@@ -23,6 +28,25 @@ section {
     height: 100vh;
 }
 
+.logo-bar{
+    display: none !important;
+}
+
+.kanji { 
+    height: 50px;
+    margin: 0 auto;
+    padding: 6px;
+    display: block;
+    text-align: center;
+}
+
+.kanji-small { 
+    height: 30px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
 .titleHead_main { 
     margin: 0 auto; 
     text-align: center; 
@@ -30,7 +54,11 @@ section {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 900;
     font-size: 1.5em;
-    letter-spacing: 20px;
+    letter-spacing: 15px;
+    
+    @include breakpoint(small only) {
+        font-size: 1em;
+    }
 }
 
 .titleHead_sub { 
@@ -49,25 +77,39 @@ section {
     a {
       color: #fff !important;   
     }  
-    
+    max-width: none !important;
     margin-bottom: 0;
     margin: 0 auto;
     bottom: 0;
     position: fixed;
     width: 100%;
-    height: 50px;
-    border-top: 1px solid; 
-    border-color: rgba(255, 255, 255, 0.1);
-    ul li { 
-        font-family: 'Source Sans Pro', sans-serif; 
-        font-weight: 400;
-        font-size: 1em;
-        letter-spacing: 5px;
-        //transition animation
-        transition: all 0.7s ease-in;
-        a:hover { 
-            color: $secondary-color !important;
-            transition: all 0.25s ease-in;
-        }  
+    height: 60px;
+//    border-top: 1px solid; 
+//    border-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.nav-button { 
+    cursor: pointer;
+    color: #fff; 
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    width: 100px;
+    text-align: center;
+    border-bottom: 1px solid;
+    border-bottom-color: rgba(255, 255, 255, 0);
+    transition: all 0.15s ease-in;
+    
+    @include breakpoint(small only) {
+        width: 80px;
     }
+}
+
+//.nav-button:hover { 
+//    border-bottom-color: $secondary-color;
+//}
+
+.active { 
+    border-bottom-color: $secondary-color;
 }
