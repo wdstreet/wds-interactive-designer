@@ -1,3 +1,15 @@
+.scroll-icon { 
+    text-align: center; 
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: .9em;
+    letter-spacing: 5px;
+    margin-top: 50px;
+    i { 
+        display: block;
+    }
+}
 
 #landing-bg { 
     background-image: url("../img/bg-image-1.jpg");

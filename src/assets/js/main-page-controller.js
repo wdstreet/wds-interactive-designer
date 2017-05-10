@@ -6,3 +6,17 @@ $(document).ready(function(){
 });
 });
 
+$(document).ready(function(){
+    $(function () {
+        $(window).scroll(function () {
+
+                 // set distance user needs to scroll before we start fadeIn
+            if ($(this).scrollTop() > 200) {
+                $('#scrollIcon').fadeOut();
+            } else {
+                $('#scrollIcon').fadeIn();
+            }
+        });
+    });
+});
+
